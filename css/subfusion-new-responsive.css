@@ -1,0 +1,69 @@
+/************************************************************************************
+smaller than 980
+*************************************************************************************/
+/*@media screen and (max-width: 980px) {
+
+	/* pagewrap */
+	/*#pagewrap {width: 617px}
+	#header {height: 99px; width: 100%}
+	h1#site-logo {top: 30px}
+	h2#site-description {top: 30px}
+	.fadein {float: none}
+	#bannerRight {clear: both; width: 507px; margin: 300px 0 20px 25px}
+	#footer {height: 50px; width: 100%}
+	#footer p {line-height: 45px}
+	#copy {padding-bottom: 0}
+	.imageMobile {display: none}
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+ @media screen and (max-width: 650px) {
+ 	body {-webkit-text-size-adjust: none;}
+	#header {height: 130px; width: 100%}
+	#footer {height: 50px; width: 100%}
+	#contentwrap {padding: 20px 0}
+	.headerleft {width: 100%; top: 15px; text-align: center}
+	h1#site-logo {margin: 0 auto}
+	.tommearns {font-size: .7em}
+	.headerright {float: left;  width: 100%; overflow: hidden; position: relative; top: 25px}
+	.headerright ul {clear:left; float:left; list-style:none; margin:0; padding:0; position:relative; left:50%; text-align:center;}
+	.headerright ul li {display:block; float:left; list-style:none; margin:0; padding:0; position:relative; right:50%}
+	.headerright ul li a {display: block; font-size: 1.2em; font-weight: bold; text-transform: uppercase; padding: 0; text-shadow: 1px 1px #fffdfa; margin:0; color: #ab9a7e; padding: 0.49em 0.7em; border-right: 1px solid #e4dfd1; border-left: 1px solid #fcfbf9; text-decoration:none;}
+	.headerright ul li a:hover {color: #666}
+	.headerright ul li a.selected {color: #666}
+	.headerright ul li a.first {padding-left: 0; border-left: 0}
+	.headerright ul li a.last {padding-right: 0; border-right: 0}
+	.headerright.footnav {top: 15px; font-size: .8em}
+	#banner {margin: 0 0 20px}
+	#copy {margin: 20px 0 20px 0}
+	p.homepage {font-size: 1em}
+	#footer {position: relative; width: 978px; max-width: 90%; margin: 0 auto; padding: 0; height: 40px; text-align: center}
+	#footer p {float: none; line-height: 60px}
+	#grid .square {margin-right: 4%; float: left; width: 48%; height: auto; border: 0}
+	#grid .square.second {margin-right: 0}
+	#grid .square.last {display: none}
+	#grid.portfolio .square.last {display: inline}
+	#grid.portfolio .square.row2.second, #grid.portfolio .square.row1.last, #grid.portfolio .square.row3.last, #grid.portfolio .square.row4.second {margin-right: 4%}
+	#grid.portfolio .square.row2.first, #grid.portfolio .square.row4.first {margin-right: 0}
+	h1 {display: none}
+	ul.direction {margin-bottom: 15px; width: 100%}
+	ul.direction .nextli {float: right}
+	ul.direction li {margin-left: 0}
+	input[type="text"] {width: 95%; border: 1px solid #ede8df}
+	textarea {width: 95%; border: 1px solid #ede8df}
+	.formButton {float: right}
+	.portfolioText {clear: both; float: left; width: 100%}
+
+	.flex-direction-nav a {top: 45%;}
+}
+
+
+
+/************************************************************************************
+smaller than 320
+*************************************************************************************/
+@media screen and (max-width: 320px) {
+	#grid .square {margin-right: 0; clear: left; width: 100%; height: auto; border: 0}
+}

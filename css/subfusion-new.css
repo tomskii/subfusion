@@ -1,0 +1,125 @@
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+img, fieldset {
+	border: 0;
+}
+
+/* set image max width to 100% */
+img {
+	max-width: 100%;
+	width: auto\9; /* ie8 */
+}
+
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+
+/*handy*/
+.right {float: right}
+.left {float: left}
+.center {text-align: center}
+.none {display: none}
+
+/*clearfix*/
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+
+body {background: #F4F4F4 url(../images/bg-header.png) no-repeat top; transition: background 0.5s ease; background-size:  100% 155px; margin: 0; padding: 0; font: 18px/100% ubuntu, Arial, Helvetica, sans-serif; color: #0B0C0C; min-height: 100%; overflow-x: hidden;}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {float: right; margin-top: 0}
+ul.nav li {display: inline; text-align: right}
+nav a {display: inline-block; text-decoration: none; color: #666; font-size: 1em; padding: 0.75em 0.75em; margin-right: 2em}
+ul.nav li:last-child a {margin-right: 0}
+ul.nav li.selected a {border-bottom: 1px solid #979797; color: #000}
+ul.nav li.selected a:hover {border-bottom: 1px solid #979797; color: #000}
+ul.nav li a {border-bottom: 1px solid #fbfbfb; transition: border 0.5s ease; transition: color 0.5s ease}
+ul.nav li a:hover {border-bottom: 1px solid #cdcdcd; color: #000}
+
+#header {width: 1104px; max-width: 95%; margin: 0 auto; height: 160px; padding-top: 30px}
+#contentwrap {width: 100%; margin: 0; padding: 0 0 20px 0}
+#content {width: 1104px; max-width: 95%; margin: 0 auto}
+#grid .square {display: block; float: left; width: 33%; height: auto; margin: 0 0.5% 0.5% 0; /*background: #000*/}
+#grid .square img {display: block; /*background: #000*/}
+#grid .square.last {margin-right: 0}
+#grid .square a:hover img {opacity: 0.9}
+
+h1#site-logo {margin: 0; position: relative; background: url(../images/logo.png) no-repeat; display: block; width: 186px; height: 41px; float: left;}
+h1#site-logo a {display: block; width: 186px; height: 41px; overflow: hidden; text-indent: -999em; text-decoration: none}
+
+#footerWrap {background: #F4F4F4 url(../images/bg-footer.png) no-repeat top; background-size: 100% 203px}
+footer {width: 1104px; max-width: 95%; margin: 0 auto; height: 203px; padding-top: 100px}
+footer p {font-size: 16px; font-family: ubuntu-light; color: #727272}
+
+.contentButtons {margin: 20px 0 70px 0}
+.contentButtons a {display: inline-block; font-size: 16px; color: #000; text-decoration: none; padding: 8px 14px 10px 14px; background: #fff; border: 1px solid #C0C0C0; border-radius: 3px;}
+.contentButtons .nextButton {float: right}
+
+.contentImageMain {float: left; width: 60%; margin-right: 5%}
+.contentImageMain img {width: 100%}
+.contentCopyMain {float: left; width: 35%}
+.contentCopyMain h1 {font-size: 24px; text-transform: uppercase; font-weight: 400; margin-bottom: 0.75em}
+.contentCopyMain h2 {font-size: 24px; font-weight: 200; text-transform: uppercase; color: #969696; margin-bottom: 0.75em; line-height: 1.5em}
+.contentpage p {font-size: 16px; font-weight: 400; margin-bottom: 1em; line-height: 1.75em}
+
+@media screen and (max-width: 1024px) {
+nav a {font-size: 0.9em; padding: 0.6em 0.6em; margin-right: 1.75em; margin-top: 0.3em}
+}
+
+@media screen and (max-width: 768px) {
+#grid .square {width: 49.5%}
+#grid .square.second {margin-right: 0}
+#grid .square.last {margin-right: 0.5%}
+#grid .square.row1.first, #grid .square.row2.second,  #grid .square.row3.last, #grid .square.row5.first {float: right}
+#grid .square.row2.second {margin-right: 0.5%}
+body {background-size:  100% 100px}
+#header {height: 105px; padding-top: 20px}
+#footerWrap {height: 105px; background-size: 100% 100%}
+footer {height: 105px; padding-top: 40px}
+h1#site-logo {width: 139px; height: 31px; background-size: 100% 100%}
+h1#site-logo a {width: 139px; height: 31px; background-size: 100% 100%}
+nav a {margin-top: 0}
+}
+
+@media screen and (max-width: 640px) {
+#grid .square {width: 100%}
+#grid .square img {width: 100%}
+#grid .square {margin: 0 0 4px 0}
+body {background-size:  100% 70px}
+#header {height: 70px; padding-top: 10px}
+h1#site-logo {width: 93px; height: 20px; background-size: 100% 100%}
+h1#site-logo a {width: 93px; height: 20px; background-size: 100% 100%}
+nav a {font-size: 0.75em; padding: 0.3em 0.5em; margin-right: 1.5em; margin-top: -10px}
+footer p {font-size: 14px}
+}
+
+
+
+
+
+
+
+
+/**/

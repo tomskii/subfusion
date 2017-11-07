@@ -1,0 +1,132 @@
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+img, fieldset {
+	border: 0;
+}
+
+/* set image max width to 100% */
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+
+/*handy*/
+.right {float: right}
+.left {float: left}
+.center {text-align: center}
+.none {display: none}
+
+/*clearfix*/
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/*links*/
+a {text-decoration: none; color: #ab9a7e}
+a:hover {text-decoration: underline; color: #000}
+
+body {background: #fff; margin: 0; padding: 0; font: 13px/150% Arial, Helvetica, sans-serif; color: #666; min-height: 100%; overflow-x: hidden;}
+#headbg {}
+#header {position: relative; width: 978px; max-width: 90%; margin: 0 auto; padding: 0; height: 137px}
+/*.headerleft {position: relative; width: 283px; top: 51px; float: left}*/
+.headerleft {position: relative; top: 51px; width: 186px; margin: 0 auto}
+#contentwrap {width: 100%; margin: 0; padding: 40px 0 20px 0}
+#contentwrap.contentpage {padding: 15px 0 20px 0}
+#content {width: 1207px; max-width: 90%; margin: 0 auto}
+#banner {position: relative; margin: 0 0 30px; padding: 0}
+/*#banner img {position: relative; border: 10px solid #fff}*/
+
+h1#site-logo {position: relative; background: url(../images/logo.png) no-repeat; display: block; width: 186px; height: 41px}
+h1#site-logo a {display: block; width: 281px; height: 40px; overflow: hidden; text-indent: -999em; text-decoration: none}
+/*h2#site-description {position: relative; background: url(../images/strap.gif) no-repeat; display: block; width: 280px; height: 18px}
+h2#site-description span {display: block; width: 280px; height: 18px; overflow: hidden; text-indent: -999em;}*/
+
+.tommearns {position: relative; clear: both; font-size: 0.9em; font-weight: normal; text-transform: uppercase; letter-spacing: 0; padding: 0; color: #ab9a7e; text-shadow: 1px 1px #fbfbfa}
+
+#footer {position: relative; width: 978px; max-width: 90%; margin: 0 auto; padding: 0; height: 90px}
+#footer p {float: left; color: #ab9a7e; font-size: 85%; line-height: 90px}
+
+#copy {clear: both; margin: 20px 0 30px 0}
+p.homepage {}
+
+.headerright {position: relative; float: right; top: 64px}
+ul.mainnav {position: relative; list-style: none; font-size: 1.08em; font-weight: normal; text-transform: uppercase; padding: 0; text-shadow: 1px 1px #fffdfa;}
+ul.mainnav li {float: left}
+ul.mainnav li a {display: block; text-decoration: none; color: #ab9a7e; padding: 0.49em 0.77em; border-right: 1px solid #e4dfd1; border-left: 1px solid #fcfbf9}
+ul.mainnav li a:hover {color: #666}
+ul.mainnav li a.selected {color: #666}
+ul.mainnav li a.first {border-left: 0}
+ul.mainnav li a.last {padding-right: 0; border-right: 0}
+.headerright.footnav {top: 30px; font-size: .8em}
+ul.mainnav.footnav li a {padding: 0.1em 0.77em}
+
+#grid {clear: both}
+#grid .square {margin-right: 1.25%; margin-bottom: 1.25%; float: left; width: 32.5%; height: auto; border: 0}
+#grid .square.last {margin-right: 0}
+#grid .square a:hover {opacity: 0.5}
+#grid .square img {max-width: 100%; height: auto}
+
+.contentpage h1 {position: relative; clear: both; float: left; font-family: arial; font-size: 1.6em; text-transform: uppercase; letter-spacing: 0; padding: 0; color: #6c6964; text-shadow: 1px 1px #fff; margin-bottom: 20px; margin-top: 5px}
+
+/*.contentpage h1 span {font-size: .6em; text-transform: uppercase; letter-spacing: 0; padding: 0; color: #6c6964; text-shadow: 1px 1px #fff; margin-bottom: 20px; margin-top: 5px}*/
+
+.portfolioImage {position: relative; clear: both; background: #fff; padding: 10px; margin-bottom: 20px}
+.portfolioImage img {margin: 0; padding: 0}
+
+ul.direction {position: relative; float: right; list-style: none; font-size: 0.9em; font-weight: normal; text-transform: uppercase; padding: 0;}
+ul.direction li {float: left; margin-left: 1em}
+ul.direction li a {display: block; text-decoration: none; color: #666; background: #ece4d8; padding: 0.49em 1em; *-webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px;}
+ul.direction li a:hover {color: #ab9a7e}
+ul.direction li a.back {background: url(../images/back.jpg) no-repeat top left; padding-left: 2.5em}
+ul.direction li a.next {background: url(../images/next.jpg) no-repeat top right; padding-right: 2.5em}
+
+.portfolioText {position: relative; float: left; padding: 10px 0 10px 2.04%; width: 31.28%; background: url(../images/2pix-border.gif) repeat-y}
+.portfolioText h2 {font-size: 1.08em; font-weight: normal; text-transform: uppercase; padding: 0; color: #c5b191}
+
+.formcontainer {clear: both; margin-top: 1.5em}
+
+legend {display: none}
+label {font-size: 1.08em; font-weight: normal; text-transform: uppercase; color: #ab9a7e}
+h1.formH1 {float: none; margin-bottom: 0.6em}
+input[type="text"], textarea {background: none repeat scroll 0 0 #fff; border: none; padding: 8px 5px; margin: 0.5em 0 2em}
+input[type="text"] {width: 280px;}
+textarea {height: 180px; width: 590px; font: 13px/150% Arial, Helvetica, sans-serif}
+form .formText.contactError, form .formArea.contactError {border: 1px solid #ab9a7e}
+a.viewsite {padding-right: 15px; background: url(../images/new-win.gif) no-repeat right}
+
+#bannerLeft {width: 20%; clear: both; float: left}
+#bannerRight {width: 80%; float: left}
+#bannerContent {margin: 0 auto}
+#bannerContent.width468 {width: 468px; margin-top: 0}
+#bannerContent.width200 {width: 200px; margin-top: 0}
+#bannerContent.width336 {width: 336px}
+#bannerContent.width160 {width: 160px}
+ul.bannerNav {position: relative; clear: both; list-style: none; font-size: 0.9em; font-weight: normal; text-transform: uppercase; padding: 0;}
+ul.bannerNav li {margin-bottom: 0.5em}
+ul.bannerNav li a {display: block; text-decoration: none; color: #666; background: #ece4d8; padding: 0.49em 1em; *-webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px;}
+ul.bannerNav li a:hover {background: #fff; color: #333}
+ul.bannerNav li a.selected {background: #fff; color: #333}
+.center {margin-left:auto; margin-right:auto; width:70%; background-color:#b0e0e6}
+#noflash {clear:both}
