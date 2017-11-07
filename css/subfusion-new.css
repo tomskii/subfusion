@@ -73,19 +73,31 @@ h1#site-logo a {display: block; width: 186px; height: 41px; overflow: hidden; te
 footer {width: 1104px; max-width: 95%; margin: 0 auto; height: 203px; padding-top: 100px}
 footer p {font-size: 16px; font-family: ubuntu-light; color: #727272}
 
-.contentButtons {margin: 20px 0 70px 0}
+.contentButtons {margin: 20px 0 50px 0}
+.contentButtons.footerButtons {margin: 50px 0 10px 0}
 .contentButtons a {display: inline-block; font-size: 16px; color: #000; text-decoration: none; padding: 8px 14px 10px 14px; background: #fff; border: 1px solid #C0C0C0; border-radius: 3px;}
 .contentButtons .nextButton {float: right}
 
 .contentImageMain {float: left; width: 60%; margin-right: 5%}
 .contentImageMain img {width: 100%}
+
 .contentCopyMain {float: left; width: 35%}
-.contentCopyMain h1 {font-size: 24px; text-transform: uppercase; font-weight: 400; margin-bottom: 0.75em}
-.contentCopyMain h2 {font-size: 24px; font-weight: 200; text-transform: uppercase; color: #969696; margin-bottom: 0.75em; line-height: 1.5em}
+.contentpage h1 {font-size: 24px; text-transform: uppercase; font-weight: 400; margin-bottom: 0.4em; line-height: 1.5em}
+.contentpage h2 {font-size: 24px; font-weight: 200; text-transform: uppercase; color: #969696; margin-bottom: 0.75em; line-height: 1.5em}
 .contentpage p {font-size: 16px; font-weight: 400; margin-bottom: 1em; line-height: 1.75em}
+
+.contentCopyMain.fullWidthIntro {width: 100%; margin: 40px 0 20px 0}
+.contentCopyMain.fullWidthIntro .contentLeft {width: 35%; margin-right: 5%; float: left}
+.contentCopyMain.fullWidthIntro .contentRight {width: 60%; float: right}
+
+.imageDecor {border: 1px solid #c4c4c4; box-shadow: 0 0 10px 2px rgba(0,0,0,0.10)}
+.imageDecor.marginTop {margin-top: 30px}
 
 @media screen and (max-width: 1024px) {
 nav a {font-size: 0.9em; padding: 0.6em 0.6em; margin-right: 1.75em; margin-top: 0.3em}
+.contentButtons {margin: 15px 0 30px 0}
+.contentButtons.footerButtons {margin: 30px 0 0 0}
+.contentButtons a {font-size: 15px; padding: 6px 11px 8px 12px}
 }
 
 @media screen and (max-width: 768px) {
@@ -101,6 +113,12 @@ footer {height: 105px; padding-top: 40px}
 h1#site-logo {width: 139px; height: 31px; background-size: 100% 100%}
 h1#site-logo a {width: 139px; height: 31px; background-size: 100% 100%}
 nav a {margin-top: 0}
+.contentImageMain {float: none; width: 100%; margin-right: 0}
+.contentCopyMain {clear: both; width: 100%; margin-top: 30px}
+.contentCopyMain.fullWidthIntro {width: 100%; margin: 40px 0 20px 0}
+.contentCopyMain.fullWidthIntro .contentLeft {width: 100%; float: none}
+.contentCopyMain.fullWidthIntro .contentRight {width: 100%; float: none}
+
 }
 
 @media screen and (max-width: 640px) {
@@ -112,7 +130,16 @@ body {background-size:  100% 70px}
 h1#site-logo {width: 93px; height: 20px; background-size: 100% 100%}
 h1#site-logo a {width: 93px; height: 20px; background-size: 100% 100%}
 nav a {font-size: 0.75em; padding: 0.3em 0.5em; margin-right: 1.5em; margin-top: -10px}
-footer p {font-size: 14px}
+footer p {font-size: 12px}
+.contentButtons {margin: 10px 0 17px 0}
+.contentButtons.footerButtons {margin: 20px 0 0 0}
+.contentButtons a {font-size: 13px; padding: 4px 9px 6px 10px}
+.contentpage h1 {font-size: 20px; text-transform: uppercase; font-weight: 400; margin-bottom: 0.4em; line-height: 1.5em}
+.contentpage h2 {font-size: 20px; font-weight: 200; text-transform: uppercase; color: #969696; margin-bottom: 0.75em; line-height: 1.5em}
+.contentpage p {font-size: 14px; font-weight: 400; margin-bottom: 0.5em; line-height: 1.5em}
+.contentCopyMain.fullWidthIntro {width: 100%; margin: 20px 0 20px 0}
+.contentCopyMain {margin-top: 15px}
+.imageDecor.marginTop {margin-top: 15px}
 }
 
 
