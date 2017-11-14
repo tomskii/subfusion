@@ -71,7 +71,7 @@ h1#site-logo a {display: block; width: 186px; height: 41px; overflow: hidden; te
 
 #footerWrap {background: #F4F4F4 url(../images/bg-footer.png) no-repeat top; background-size: 100% 203px}
 footer {width: 1104px; max-width: 95%; margin: 0 auto; height: 203px; padding-top: 100px}
-footer p {font-size: 16px; font-family: ubuntu-light; color: #727272}
+footer p {font-size: 14px; font-family: ubuntu-light; color: #aaa}
 
 .contentButtons {margin: 20px 0 50px 0}
 .contentButtons.footerButtons {margin: 50px 0 10px 0}
@@ -110,6 +110,7 @@ body {background-size:  100% 100px}
 #header {height: 105px; padding-top: 20px}
 #footerWrap {height: 105px; background-size: 100% 100%}
 footer {height: 105px; padding-top: 40px}
+footer p {font-size: 13px}
 h1#site-logo {width: 139px; height: 31px; background-size: 100% 100%}
 h1#site-logo a {width: 139px; height: 31px; background-size: 100% 100%}
 nav a {margin-top: 0}
@@ -118,7 +119,6 @@ nav a {margin-top: 0}
 .contentCopyMain.fullWidthIntro {width: 100%; margin: 40px 0 20px 0}
 .contentCopyMain.fullWidthIntro .contentLeft {width: 100%; float: none}
 .contentCopyMain.fullWidthIntro .contentRight {width: 100%; float: none}
-
 }
 
 @media screen and (max-width: 640px) {
