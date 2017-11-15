@@ -78,7 +78,7 @@ footer p {font-size: 14px; font-family: ubuntu-light; color: #aaa}
 .contentButtons a {display: inline-block; font-size: 16px; color: #000; text-decoration: none; padding: 8px 14px 10px 14px; background: #fff; border: 1px solid #C0C0C0; border-radius: 3px;}
 .contentButtons .nextButton {float: right}
 
-.contentImageMain {float: left; width: 60%; margin-right: 5%}
+.contentImageMain {float: left; width: 60%; max-width: 657px; margin-right: 5%}
 .contentImageMain img {width: 100%}
 
 .contentCopyMain {float: left; width: 35%}
