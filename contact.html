@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-	<title>Subfusion: DRT</title>
+	<title>Subfusion: Contact</title>
 	<meta name="keywords" content="freelance,web,design,designer,website,portfolio,London,site,flash,UK,subfusion,award,tom mearns,CSS,XHTML" />
 	<meta name="description" content="Subfusion is the website design portfolio of Tom Mearns the London freelance web designer" />
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=1.0;" />
@@ -27,38 +27,37 @@
 	<div id="pagewrap">
 
 		<header id="header">
-				<h1 id="site-logo"><a href="../index.htm">subfusion</a></h1>
+				<h1 id="site-logo"><a href="index.htm">subfusion</a></h1>
 
 				<nav>
 				  <ul class="nav">
-						<li class="selected"><a href="../index.htm">Projects</a></li>
-						<li><a href="../about.html">About</a></li>
-						<li><a href="../contact.html">Contact</a></li>
+						<li><a href="index.htm">Projects</a></li>
+						<li><a href="about.html">About</a></li>
+						<li class="selected"><a href="contact.html">Contact</a></li>
 				  </ul>
 				</nav>
 		</header>
 
 		<div id="contentwrap" class="contentpage clearfix">
-			<div id="content" class="clearfix">
-
+			<div id="content" class="formContent clearfix">
+				<h1>Contact</h1>
 				<form action="/contact.php" method="post" class="clearfix">
-
 						<fieldset>
 						<input type="hidden" name="recipient" value="tom@subfusion.com" />
 							<input type="hidden" name="subject" value="Message from subfusion" />
 
 							<legend>Your details</legend>
 
-							<label class="contact" for="name">Your name</label><br />
+							<label class="contact" for="name">Full name</label><br />
 							<input type="text" name="name" id="name" size="30" value="" class="formText contact" tabindex="1" /><br />
 
-							<label class="contact" for="email">Your email</label><br />
+							<label class="contact" for="email">Email</label><br />
 							<input type="text" name="email" id="email" size="30" value="" class="formText contact" tabindex="2" /><br />
 
-							<label class="contact" for="message">Your message</label><br />
+							<label class="contact" for="message">Message</label><br />
 							<textarea cols="24" rows="8" name="text" id="message" class="formArea contact" tabindex="3"></textarea><br>
 
-						<input type="image" src="images/send.gif" alt="send" class="formButton" tabindex="4" />
+						<input class="formButton" tabindex="4" value="send&nbsp;&nbsp;&gt;"/></input>
 						</fieldset>
 
 						</form>

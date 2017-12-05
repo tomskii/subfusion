@@ -42,7 +42,6 @@ GENERAL STYLING
 .clearfix {display: block;}
 /* End hide from IE-mac */
 
-
 body {background: #F4F4F4 url(../images/bg-header.png) no-repeat top; transition: background 0.5s ease; background-size:  100% 155px; margin: 0; padding: 0; font: 18px/100% ubuntu, Arial, Helvetica, sans-serif; color: #0B0C0C; min-height: 100%; overflow-x: hidden;}
 
 * {
@@ -64,7 +63,49 @@ ul.nav li a:hover {border-bottom: 1px solid #cdcdcd; color: #000}
 #grid .square {display: block; float: left; width: 33%; height: auto; margin: 0 0.5% 0.5% 0; /*background: #000*/}
 #grid .square img {display: block; /*background: #000*/}
 #grid .square.last {margin-right: 0}
-#grid .square a:hover img {opacity: 0.9}
+#grid .square a:hover img {opacity: 0.5}
+
+/* overlay stuff for homepage */
+#grid .container {
+	position: relative;
+	width: 100%;
+}
+
+#grid .image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#grid .overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+opacity: 0;
+transition: .5s ease;
+background-color: #008CBA;
+cursor: pointer;
+}
+
+#grid .container:hover .overlay {
+opacity: 1;
+}
+
+#grid .text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+
+
 
 h1#site-logo {margin: 0; position: relative; background: url(../images/logo.png) no-repeat; display: block; width: 186px; height: 41px; float: left;}
 h1#site-logo a {display: block; width: 186px; height: 41px; overflow: hidden; text-indent: -999em; text-decoration: none}
@@ -78,20 +119,30 @@ footer p {font-size: 14px; font-family: ubuntu-light; color: #aaa}
 .contentButtons a {display: inline-block; font-size: 16px; color: #000; text-decoration: none; padding: 8px 14px 10px 14px; background: #fff; border: 1px solid #C0C0C0; border-radius: 3px;}
 .contentButtons .nextButton {float: right}
 
-.contentImageMain {float: left; width: 60%; max-width: 657px; margin-right: 5%}
+.contentImageMain {float: left; width: 60%; margin-right: 5%}
 .contentImageMain img {width: 100%}
 
 .contentCopyMain {float: left; width: 35%}
 .contentpage h1 {font-size: 24px; text-transform: uppercase; font-weight: 400; margin-bottom: 0.4em; line-height: 1.5em}
-.contentpage h2 {font-size: 24px; font-weight: 200; text-transform: uppercase; color: #969696; margin-bottom: 0.75em; line-height: 1.5em}
+.contentpage h2 {font-size: 24px; font-weight: 200; text-transform: uppercase; color: #969696; margin-bottom: 0.5em; line-height: 1.5em}
 .contentpage p {font-size: 16px; font-weight: 400; margin-bottom: 1em; line-height: 1.75em}
 
 .contentCopyMain.fullWidthIntro {width: 100%; margin: 40px 0 20px 0}
 .contentCopyMain.fullWidthIntro .contentLeft {width: 35%; margin-right: 5%; float: left}
 .contentCopyMain.fullWidthIntro .contentRight {width: 60%; float: right}
 
+#contentwrap ul li {font-size: 16px; margin: 0 0 12px 20px; line-height: 1.4em; color: #666}
+
 .imageDecor {border: 1px solid #c4c4c4; box-shadow: 0 0 10px 2px rgba(0,0,0,0.10)}
 .imageDecor.marginTop {margin-top: 30px}
+
+.formContent form {width: 66%}
+.formContent .formText {width: 100%}
+.formContent legend {font-size: 21px; font-weight: 200; text-transform: uppercase; color: #969696; margin-bottom: 1em; line-height: 2.5em}
+.formContent label {font-size: 16px; font-weight: 200; color: #333; margin-bottom: 1em; line-height: 1.5em}
+.formContent .formText, .formContent .formArea {font-size: 16px; font-weight: 200; color: #333; margin: .5em 0 1em 0; line-height: 1.5em; padding: 0.75em; border: none}
+.formContent .formArea {width: 100%}
+.formContent input.formButton {font-family: ubuntu, Arial, Helvetica, sans-serif; font-size: 16px; color: #000; text-decoration: none; padding: 8px 14px 10px 14px; background: #fff; border: 1px solid #C0C0C0; border-radius: 3px; width: 5em; cursor: pointer;}
 
 @media screen and (max-width: 1024px) {
 nav a {font-size: 0.9em; padding: 0.6em 0.6em; margin-right: 1.75em; margin-top: 0.3em}
@@ -101,6 +152,7 @@ nav a {font-size: 0.9em; padding: 0.6em 0.6em; margin-right: 1.75em; margin-top:
 }
 
 @media screen and (max-width: 768px) {
+.contentImageMain img {width: 100%}
 #grid .square {width: 49.5%}
 #grid .square.second {margin-right: 0}
 #grid .square.last {margin-right: 0.5%}
@@ -119,6 +171,10 @@ nav a {margin-top: 0}
 .contentCopyMain.fullWidthIntro {width: 100%; margin: 40px 0 20px 0}
 .contentCopyMain.fullWidthIntro .contentLeft {width: 100%; float: none}
 .contentCopyMain.fullWidthIntro .contentRight {width: 100%; float: none}
+.formContent form {width: 100%}
+.formContent legend {font-size: 17px; margin-bottom: .5em;}
+.formContent label {font-size: 14px; margin-bottom:1em; line-height: 1em}
+.formContent .formText, .formContent .formArea {font-size: 14px; margin: .5em 0 1em 0; line-height: 1em; padding: 0.5em; border: none}
 }
 
 @media screen and (max-width: 640px) {
@@ -135,6 +191,7 @@ footer p {font-size: 12px}
 .contentButtons.footerButtons {margin: 20px 0 0 0}
 .contentButtons a {font-size: 13px; padding: 4px 9px 6px 10px}
 .contentpage h1 {font-size: 20px; text-transform: uppercase; font-weight: 400; margin-bottom: 0.4em; line-height: 1.5em}
+
 .contentpage h2 {font-size: 20px; font-weight: 200; text-transform: uppercase; color: #969696; margin-bottom: 0.75em; line-height: 1.5em}
 .contentpage p {font-size: 14px; font-weight: 400; margin-bottom: 0.5em; line-height: 1.5em}
 .contentCopyMain.fullWidthIntro {width: 100%; margin: 20px 0 20px 0}
