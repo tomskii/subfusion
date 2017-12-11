@@ -120,9 +120,11 @@ footer p {font-size: 14px; font-family: ubuntu-light; color: #aaa}
 .contentButtons .nextButton {float: right}
 
 .contentImageMain {float: left; width: 60%; margin-right: 5%}
+.contentImageMain.halfImage {float: left; width: 45%; margin-right: 5%}
 .contentImageMain img {width: 100%}
 
 .contentCopyMain {float: left; width: 35%}
+.contentCopyMain.halfCopy {float: left; width: 50%}
 .contentpage h1 {font-size: 24px; text-transform: uppercase; font-weight: 400; margin-bottom: 0.4em; line-height: 1.5em}
 .contentpage h2 {font-size: 24px; font-weight: 200; text-transform: uppercase; color: #969696; margin-bottom: 0.5em; line-height: 1.5em}
 .contentpage p {font-size: 16px; font-weight: 400; margin-bottom: 1em; line-height: 1.75em}
@@ -166,8 +168,8 @@ footer p {font-size: 13px}
 h1#site-logo {width: 139px; height: 31px; background-size: 100% 100%}
 h1#site-logo a {width: 139px; height: 31px; background-size: 100% 100%}
 nav a {margin-top: 0}
-.contentImageMain {float: none; width: 100%; margin-right: 0}
-.contentCopyMain {clear: both; width: 100%; margin-top: 30px}
+.contentImageMain, .contentImageMain.halfImage {float: none; width: 100%; margin-right: 0}
+.contentCopyMain, .contentCopyMain.halfCopy {clear: both; width: 100%; margin-top: 30px}
 .contentCopyMain.fullWidthIntro {width: 100%; margin: 40px 0 20px 0}
 .contentCopyMain.fullWidthIntro .contentLeft {width: 100%; float: none}
 .contentCopyMain.fullWidthIntro .contentRight {width: 100%; float: none}
