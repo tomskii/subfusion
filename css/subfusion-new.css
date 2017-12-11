@@ -134,6 +134,7 @@ footer p {font-size: 14px; font-family: ubuntu-light; color: #aaa}
 .contentCopyMain.fullWidthIntro .contentRight {width: 60%; float: right}
 
 #contentwrap ul li {font-size: 16px; margin: 0 0 12px 20px; line-height: 1.4em; color: #666}
+#contentwrap p.subli {font-size: 16px; margin: 0; line-height: 1.4em; color: #999; text-transform: uppercase;}
 
 .imageDecor {border: 1px solid #c4c4c4; box-shadow: 0 0 10px 2px rgba(0,0,0,0.10)}
 .imageDecor.marginTop {margin-top: 30px}
