@@ -114,7 +114,7 @@ h1#site-logo a {display: block; width: 186px; height: 41px; overflow: hidden; te
 footer {width: 1104px; max-width: 95%; margin: 0 auto; height: 203px; padding-top: 100px}
 footer p {font-size: 14px; font-family: ubuntu-light; color: #aaa}
 
-.contentButtons {margin: 20px 0 50px 0}
+.contentButtons {position: relative; margin: 20px 0 50px 0}
 .contentButtons.footerButtons {margin: 50px 0 10px 0}
 .contentButtons a {display: inline-block; font-size: 16px; color: #000; text-decoration: none; padding: 8px 14px 10px 14px; background: #fff; border: 1px solid #C0C0C0; border-radius: 3px;}
 .contentButtons .nextButton {float: right}
@@ -122,6 +122,18 @@ footer p {font-size: 14px; font-family: ubuntu-light; color: #aaa}
 .contentImageMain {float: left; width: 60%; margin-right: 5%}
 .contentImageMain.halfImage {float: left; width: 45%; margin-right: 5%}
 .contentImageMain img {width: 100%}
+
+.singleWrap {}
+.singleImageMain {}
+.singleCopyMain {}
+
+@media screen and (max-width: 1024px) {
+		.singleCopyMain {clear: both}
+		.singleImageMain {clear: none}
+
+	}
+
+
 
 .contentCopyMain {float: left; width: 35%}
 .contentCopyMain.halfCopy {float: left; width: 50%}
@@ -132,11 +144,16 @@ footer p {font-size: 14px; font-family: ubuntu-light; color: #aaa}
 .contentCopyMain.fullWidthIntro {width: 100%; margin: 40px 0 20px 0}
 .contentCopyMain.fullWidthIntro .contentLeft {width: 35%; margin-right: 5%; float: left}
 .contentCopyMain.fullWidthIntro .contentRight {width: 60%; float: right}
+.contentCopyMain.fullWidthIntro.noTopMargin {margin: 0 0 20px 0}
+.contentCopyMain.fullWidthIntro.noTopMargin .contentRight {margin: 15px 0 0}
+
+.contentSingle {margin: 40px 0 20px 0}
 
 #contentwrap ul li {font-size: 16px; margin: 0 0 12px 20px; line-height: 1.4em; color: #666}
 #contentwrap p.subli {font-size: 16px; margin: 0; line-height: 1.4em; color: #999; text-transform: uppercase;}
 
-.imageDecor {border: 1px solid #c4c4c4; box-shadow: 0 0 10px 2px rgba(0,0,0,0.10)}
+/*.imageDecor {border: 1px solid #c4c4c4; box-shadow: 0 0 0 0 rgba(0,0,0,0.10)}*/
+.imageDecor {border: 1px solid #ececec; box-shadow: 1px 1px 2px 0 rgba(1,1,2,0.0)}
 .imageDecor.marginTop {margin-top: 30px}
 
 .formContent form {width: 66%}
@@ -152,6 +169,12 @@ nav a {font-size: 0.9em; padding: 0.6em 0.6em; margin-right: 1.75em; margin-top:
 .contentButtons {margin: 15px 0 30px 0}
 .contentButtons.footerButtons {margin: 30px 0 0 0}
 .contentButtons a {font-size: 15px; padding: 6px 11px 8px 12px}
+.contentCopyMain.fullWidthIntro.noTopMargin .contentRight {margin: 0}
+.container {display:table}
+
+.contentTest {display:table-footer-group; clear: all; margin-top: 20px}
+.imageTest {display:table-header-group}
+.contentTest .contentCopyMain.fullWidthIntro.noTopMargin {margin-top: 40px}
 }
 
 @media screen and (max-width: 768px) {
@@ -198,10 +221,13 @@ footer p {font-size: 12px}
 .contentpage h2 {font-size: 20px; font-weight: 200; text-transform: uppercase; color: #969696; margin-bottom: 0.75em; line-height: 1.5em}
 .contentpage p {font-size: 14px; font-weight: 400; margin-bottom: 0.5em; line-height: 1.5em}
 .contentCopyMain.fullWidthIntro {width: 100%; margin: 20px 0 20px 0}
+.contentTest .contentCopyMain.fullWidthIntro.noTopMargin {margin-top: 20px}
 .contentCopyMain {margin-top: 15px}
 .imageDecor.marginTop {margin-top: 15px}
 }
 
+.contentTest {position: relative; clear: none; width: 100%}
+.imageTest {position: relative; clear: both; width: 100%}
 
 
 

@@ -27,7 +27,7 @@
 	<div id="pagewrap">
 
 		<header id="header">
-				<h1 id="site-logo"><a href="index.htm">subfusion</a></h1>
+				<h1 id="site-logo"><a href="../index.htm">subfusion</a></h1>
 
 				<nav>
 				  <ul class="nav">
@@ -41,93 +41,6 @@
 		<div id="contentwrap" class="contentpage clearfix">
 			<div id="content" class="formContent clearfix">
 				<h1>Contact</h1>
-
-				<?php
-
-function VerifyForm(&$values, &$errors)
-{
-// Do all necessary form verification
-
-if (strlen($values['name']) == 0)
-	$errors['name'] = 'Error';
-
-if (!ereg('.*@.*\..{2,4}', $values['email']))
-	$errors['email'] = 'Error';
-
-if (strlen($values['text']) == 0)
-	$errors['text'] = 'Error';
-return (count($errors) == 0);
-}
-
-function DisplayForm($values, $errors)
-{
-	?>
-
-<?php
-if (count($errors) > 0)
-	echo "<p><span class='error'>Please enter your details in the hilighted fields.</span></p>";
-	else echo "<p>If you are interested in hiring me please use the form to send as much detail of your project as possible.</p>";
-?>
-					<div class="formcontainer">
-					<form action="<?= $_SERVER['PHP_SELF'] ?>" method="post" class="clearfix">
-
-					<fieldset>
-					<input type="hidden" name="recipient" value="tom@subfusion.com" />
-						<input type="hidden" name="subject" value="Message from subfusion" />
-
-						<legend>Your details</legend>
-
-						<label class="contact<?= $errors['name'] ?>" for="name">Your name</label><br />
-						<input type="text" name="name" id="name" size="30" value="<?= htmlentities($values['name']) ?>" class="formText contact<?= $errors['name'] ?>" tabindex="1" /><br />
-
-						<label class="contact<?= $errors['email'] ?>" for="email">Your email</label><br />
-						<input type="text" name="email" id="email" size="30" value="<?= htmlentities($values['email']) ?>" class="formText contact<?= $errors['email'] ?>" tabindex="2" /><br />
-
-						<label class="contact<?= $errors['text'] ?>" for="message">Your message</label><br />
-						<textarea cols="24" rows="8" name="text" id="message" class="formArea contact<?= $errors['text'] ?>" tabindex="3"><?= htmlentities($values['text']) ?></textarea><br>
-
-					<input type="image" src="images/send.gif" alt="send" class="formButton" tabindex="4" />
-					</fieldset>
-
-					</form>
-					</div><!-- end contactRight -->
-					<?php
-}
-
-
-function ProcessForm($values){ mail('tom@subfusion.com',"Subject", 	"Message from subfusion\n".$values['name']."\n".$values['email']."\n".$values['text']."\n",	"From: tom@subfusion.com\r\n"."Reply-To: tom@subfusion.com\r\n"	);
-
-echo "<p>Thanks for your message. I'll get back to you as soon as possible.</p><br>
-<section id='grid'>
-				<div class='square'>
-					<a href='portfolio.html'><img src='images/thumbs/sno.jpg' alt=''></a>
-				</div>
-				<div class='square second'>
-					<a href='portfolio.html'><img src='images/thumbs/bpm.jpg' alt=''></a>
-				</div>
-				<div class='square last'>
-					<a href='portfolio.html'><img src='images/thumbs/level3.jpg' alt=''></a>
-				</div>
-			</section>";
-}
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST')
-{
-$formValues = $_POST;
-$formErrors = array();
-
-if (!VerifyForm($formValues, $formErrors))
-	DisplayForm($formValues, $formErrors);
-else
-	ProcessForm($formValues);
-}
-else
-DisplayForm(null, null);
-?>
-
-
-
-
 				<form action="/contact.php" method="post" class="clearfix">
 						<fieldset>
 						<input type="hidden" name="recipient" value="tom@subfusion.com" />
